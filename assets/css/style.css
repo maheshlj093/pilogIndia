@@ -1,0 +1,190 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+*{
+    font-family: 'Poppins', sans-serif;
+}
+
+nav{
+   position:fixed;
+   background: #fff;
+    padding: 0px 20px;
+    z-index: 11111;
+    border-bottom: 1px solid #1a23
+}
+  main {
+    flex: 1 0 auto;
+  }
+.brand-logo img{
+    position: relative;
+    top: 10px;
+}
+
+.dropdown-content{
+    width: 100% !important;
+    left: 0 !important;
+    top: 65px !important;
+}
+.saasLogo{
+    position: relative;
+    top: 9px;
+}
+.bxl-instagram{
+    background: radial-gradient(circle farthest-corner at 35% 90%, #fec564, transparent 50%), radial-gradient(circle farthest-corner at 0 140%, #fec564, transparent 50%), radial-gradient(ellipse farthest-corner at 0 -25%, #5258cf, transparent 50%), radial-gradient(ellipse farthest-corner at 20% -50%, #5258cf, transparent 50%), radial-gradient(ellipse farthest-corner at 100% 0, #893dc2, transparent 50%), radial-gradient(ellipse farthest-corner at 60% -20%, #893dc2, transparent 50%), radial-gradient(ellipse farthest-corner at 100% 100%, #d9317a, transparent), linear-gradient(#6559ca, #bc318f 30%, #e33f5f 50%, #f77638 70%, #fec66d 100%);
+}
+
+/*news feild*/
+
+.news-ticker{
+    width: 100%;
+    height: 40px;
+    background: #fff;
+    display: flex;
+    align-items: center;
+    
+}
+.news-ticker-header{
+    background: #a6171f;
+   
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 12px;
+    width: 240px;
+    font-weight: bold;
+    font-size: 18px;
+    color: white;
+}
+.news-ticker-content{
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+background: #30419f;
+}
+.news-ticker-content ul{
+    display: flex;
+    white-space: nowrap;
+    list-style: none;
+    animation: tickerNews 40s infinite linear;
+    line-height: 10px;
+}
+.news-ticker-content ul li::after{
+    content: '|';
+    margin: 0 10px;
+    color: white;
+}
+.news-ticker-content ul li a{
+    color: rgb(255, 255, 255);
+}
+.news-ticker-content ul:hover{
+    animation-play-state: paused;
+}
+.nav-wrapper ul li a:hover{
+    color: white !important;
+    background: #30419f;
+}
+@keyframes tickerNews{
+    from{
+        transform: translate(100%);
+    }
+    to{
+        transform: translate(-200%);
+    }
+}
+.ourClients{
+    display: flex;
+}
+.partners{
+    font-size: 10px;
+    text-align: center;
+    font-weight:600;
+    line-height: 20px;
+}
+.partenerRow{
+    width: 80%;
+}
+.partners a{
+    color: rgb(28, 20, 70);
+
+}
+.partners span{
+    color: rgb(111, 20, 0);
+    font-weight: bolder;
+    padding-right: 11px;
+    padding-left: 11px;
+}
+.parallax-bg-color{
+    background: linear-gradient(187deg, #30419f, #30419f59);
+}
+.awards p{
+    font-size: 13px;
+    font-weight: 600;
+    padding-top: 10px;
+    color: black;
+    letter-spacing: 2px;
+}
+
+.underline{
+    border-bottom: 2px solid rgb(0 138 160);
+    width: 100px;
+    position: absolute;
+    right: 50%;
+    padding-top: 9px;
+}
+.reviewUs{
+    background-image: url("../images/businessman.jpg");
+    background-size: 40%;
+    background-repeat: no-repeat;
+    background-position: right;
+    background-color: #e0e0d88c;
+    border-radius: 100% 0% 0% 100% / 0% 100% 0% 100%  ;
+}
+.testimonials{
+    height: 150px !important;
+}
+#customerExperienceDesc{
+    position: relative;
+    top: 25px;
+}
+#customerExperiencebtn{
+    position: relative;
+    right: 0px;
+    left: 235px;
+    bottom: 55px;
+}
+@media only screen and (max-width: 600px) {
+    main{
+        position: relative;
+        top: 55px;
+    }
+    .news-ticker-header {
+        font-size: 10px;
+      width: 40%;
+    }
+    .news-ticker-content ul li a{
+        font-size: 10px;
+    }
+    .partenerRow{
+        width: 100%;
+    }
+    .parallax-container h3{
+        font-size: 18px;
+    }
+    #customerExperienceDesc {
+        top: 0px;
+    }
+    #customerExperiencebtn {
+        left: 0px;
+        bottom: 5px;
+        display: flex;
+        /* font-size: 11px; */
+    }
+    .carousel.carousel-slider .carousel-item p{
+        font-size: 12px;
+    }
+    #OptimizedSec{
+        font-size: 20px;
+    }
+    footer{
+        margin-top: 70px;
+    }
+  }
